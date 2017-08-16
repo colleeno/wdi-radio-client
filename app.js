@@ -16,4 +16,10 @@ angular
       controller: 'SongIndexController',
       controllerAs: 'vm'
     })
+    .state ('songShow', {
+      url: '/songs/:id',
+      templateUrl: 'js/ng-views/show.html',
+      controller: 'SongShowController',
+      controllerAs: 'vm'
+    })
   }

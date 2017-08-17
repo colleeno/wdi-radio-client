@@ -28,4 +28,10 @@ angular
       controller: 'SongShowController',
       controllerAs: 'vm'
     })
+    .state ('songEdit', {
+      url: 'songs/:id/edit',
+      templateUrl: 'js/ng-views/edit.html',
+      controller: 'SongEditController',
+      controllerAs: 'vm'
+    })
   }

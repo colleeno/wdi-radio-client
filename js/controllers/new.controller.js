@@ -1,12 +1,12 @@
 angular
 .module('radio')
 .controller('SongNewController', [
+  '$state',
   'Song',
-  '$stateParams',
   SongNewController
 ])
 
-  function SongNewController(Song, $stateParams) {
+  function SongNewController($state, Song) {
     this.song = new Song()
     this.create = function () {
       this.song.$save(() => {
